@@ -9,9 +9,13 @@ body{
     justify-content: space-between;
 }
 .recetas article{
-    width: 30%;
+    width: 45%;
+    margin-left: 50px;
 }
 
 .recetas article img{
-    width: 200px;
+    width: 500px;
+}
+h1{
+    text-align: center;
 }
