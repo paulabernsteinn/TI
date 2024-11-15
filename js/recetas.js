@@ -32,6 +32,7 @@ fetch(`https://dummyjson.com/recipes/${id}`)
     recetaIndividual.instructions = data.instructions
     instruccionesReceta.innerText = recetaIndividual.instructions
 
+
   })
 .catch(function(e){
     console.log(e)
