@@ -1,3 +1,73 @@
+/*INDEX*/
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0px 0px 30px 0px;
+}
+
+.login {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: right;
+    width: 100%;
+    font-weight: bold;
+}
+
+.login ul {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ .login li {
+     display: flex;
+     list-style-type: none;
+ }
+ 
+ .login li a {
+     display: flex;
+     text-decoration: none;
+     margin: 0px 20px;
+     color: black;
+ }
+
+.logo {
+    border-radius: 50%;
+    width: 180px;
+    padding: 30px;
+}
+
+.carpetas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.carpetas li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carpetas li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    width: 180px;
+    height: 50px;
+    border-radius: 7px;
+}
+
 body{
     box-sizing: border-box;
 }
@@ -7,21 +77,93 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
 }
 .recetas article{
     width: 45%;
-    margin-left: 50px;
 }
 
 .recetas article img{
-    width: 500px;
+    width: 100%; 
+    max-width: 500px; 
+    display: block;
+    margin: 0 auto;
 }
 h1{
     text-align: center;
 }
-.imagen_receta img{
-width: 100%;
+
+.ver_mas{
+    display: flex;
+    justify-content: center;
 }
 
+.ver_mas a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    width: 90px;
+    padding: 10px 10px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
 
+.footer_nombres{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 325px;
+    padding-right: 300px;
+    gap: 5px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+}
+
+.cargar_mas{
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color:rgb(26, 195, 26);
+    font-size: 16px;
+    border:none;
+    border-radius: 7px;
+    text-align: center; 
+    font-weight: bold;
+}
+/*hacer que carguen 10 mas*/
+
+
+/*RECETA*/
+.imagen_receta img{
+    width: 20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0 auto;
+    }
     
+.receta p {
+    text-align: center;
+}
+    
+.nombre_receta{
+    font-weight: bold;
+}
+/*hacer listas y fijarse si hay que poner ingredientes y poner la foto al costado y el texto al lado*/
+
+/*CATEGORIES*/
+/*CATEGORY*/
+/*SEARCH_RESULTS*/
+/*LOGIN*/
+/*REGISTER*/
