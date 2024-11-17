@@ -22,28 +22,21 @@
             <li><a href="categories.html">CATEGORIAS</a></li>
         </ul>
     </header>
-    <h1>Login</h1>
-   <section class="seccion_login">
-    <form method="GET" action="./index.html" class="form1">
-        <div>   
-            <label for="Email">Email</label>
-            <input type="email" placeholder="Email" name="email"  id= "email">
-            <div class="email"></div>
-        </div>
-        <div>
-            <label for="Contraseña">Contraseña</label>
-            <input type="Contraseña" placeholder="Contraseña" name="Contraseña" id="contraseña">
-            <div class="contraseña"></div>
-        </div>
-        <div>
-            <button type="submit">Ingresar</button>
-        </div>
-        <div>
-            <a href="register.html" class="button-link">No tengo cuenta</a>
-        </div>
-    </form>
-</section>
-    
+
+    <main class="logi">
+        <form action="index.html" method="get">
+            <div>
+                <label for="email"><b>Email</b></label>
+              <input type="email" name="email" id="email" placeholder="Escribe tu email">
+            </div>
+            <div>
+                <label for="contraseña"><b>Password</b></label>
+                <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+            </div>
+            <div> <a href="register.html">No tengo cuenta</a></div>
+            <button type="submit"> <b>Enviar</b> </button>
+        </form>
+    </main>
 <script src="js/login.js"></script>
 <footer> 
     <div class="footer_nombres">

@@ -1,8 +1,7 @@
 let form = document.querySelector("form")
 let email = document.getElementById("email")
 let contraseña = document.getElementById("contraseña")
-let invalidEmail = document.querySelector(".email")
-let invalidContraseña = document.querySelector(".contraseña")
+
 
 form.addEventListener("submit", function(event){
     event.preventDefault();
