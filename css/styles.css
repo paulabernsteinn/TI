@@ -162,6 +162,32 @@ h1{
 .nombre_receta{
     font-weight: bold;
 }
+.seccion_login {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(196, 4, 4);
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .button-link:hover {
+    background-color: rgb(196, 4, 4);
+    margin-top: 10px;
+  }
+  
+
+
 /*hacer listas y fijarse si hay que poner ingredientes y poner la foto al costado y el texto al lado*/
 
 /*CATEGORIES*/
