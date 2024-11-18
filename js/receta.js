@@ -7,6 +7,7 @@ let imagenReceta = document.querySelector(".imagen_receta")
 let ingredientesReceta= document.querySelector(".ingredientes")
 let instruccionesReceta = document.querySelector(".instrucciones")
 let tiempo_coccionReceta = document.querySelector(".tiempo_coccion")
+let categoriasReceta = document.querySelector(".categorias_receta")
 
 let recetaIndividual={
     name: "",
@@ -14,6 +15,7 @@ let recetaIndividual={
     ingredients: "",
     instructions: "",
     cookTimeMinutes: "",
+    mealType: "",
 }
 fetch(`https://dummyjson.com/recipes/${id}`)
 .then(function(response) {
@@ -34,6 +36,8 @@ fetch(`https://dummyjson.com/recipes/${id}`)
     recetaIndividual.cookTimeMinutes = data.cookTimeMinutes
     tiempo_coccionReceta.innerText = recetaIndividual.cookTimeMinutes
 
+    recetaIndividual.mealType = data.mealType
+    categoriasReceta.innerText = recetaIndividual.mealType
 
   })
 .catch(function(e){
