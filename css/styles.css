@@ -47,7 +47,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    width: 400px;
+    width: 780px;
     padding: 5px;
     margin: 0px 0px 0px 0px;
 }
@@ -67,6 +67,23 @@
     width: 180px;
     height: 50px;
     border-radius: 7px;
+}
+
+.carpetas form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color:rgb(196, 4, 4);
+    text-decoration: none;
+    width: 400px;
+    height: 50px;
+    border-radius: 7px;
+}
+
+.carpetas form label{
+    text-align: center;
+    font-size: 16px;
 }
 
 body{
@@ -119,7 +136,7 @@ h1{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 325px;
+    padding-left: 300px;
     padding-right: 300px;
     gap: 5px;
     box-sizing: border-box;
@@ -127,8 +144,6 @@ h1{
     background-color: rgb(196, 4, 4);;
     text-decoration: none;
     color: white; 
-    
-    
 }
 
 .cargar_mas{
@@ -195,6 +210,7 @@ h1{
 /*CATEGORIES*/
 /*CATEGORY*/
 /*SEARCH_RESULTS*/
+
 /*LOGIN*/
 .logi{
     display: flex;
@@ -223,7 +239,6 @@ h1{
 
 
 /*REGISTER*/
-
 .regi {
     display: flex;
     flex-wrap: wrap;
@@ -239,11 +254,9 @@ h1{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 }
-
 .regi div{
     margin-bottom: 10px;
 }
-
 .regi div a{
     color:white;
     text-decoration: none;
