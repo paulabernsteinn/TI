@@ -28,9 +28,6 @@ fetch(`https://dummyjson.com/recipes/${id}`)
     recetaIndividual.image = data.image
     imagenReceta.innerHTML = `<img src=${recetaIndividual.image} />`
 
-    recetaIndividual.ingredients = data.ingredients
-    ingredientesReceta.innerText = recetaIndividual.ingredients
-
     recetaIndividual.instructions = data.instructions
     instruccionesReceta.innerText = recetaIndividual.instructions
 

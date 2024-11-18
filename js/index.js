@@ -29,3 +29,11 @@ fetch('https://dummyjson.com/recipes')
     .catch(function (error){
         console.log("Mi error fue", error);
     })
+
+let skip = 0;
+cargarRecetas("https://dummyjson.com/recipes?limit=10%skip=0");
+document.querySelector(".cargar_mas").addEventListener('click', function(){
+    skip += 10
+    let url = 'https://dummyjson.com/recipes?limit=10%skip=' + skip;
+    cargarRecetas(url)
+});
