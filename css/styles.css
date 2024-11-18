@@ -276,3 +276,7 @@ h1{
     color:white;
     text-decoration: none;
 }
+.boton_enviar a{
+text-decoration: none;
+color: rgb(51, 50, 50);
+}

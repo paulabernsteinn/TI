@@ -34,11 +34,13 @@
         <form action="index.html" method="get">
             <div>
             <label for="email"><b>Email</b></label>
-                <input type="email" name="email" id="email" placeholder="Escribe tu email" required>
+                <input type="email" name="email" id="email" placeholder="Escribe tu email" >
+                <div class="email"></div>
             </div>
             <div>
-            <label for="contrasennia"><b>Password</b></label>
-            <input type="password" name="contrasennia" id="contrasennia" placeholder="Contraseña">
+            <label for="contraseña"><b>Password</b></label>
+            <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+            <div class="contraseña"></div>
             </div>
             <div>
                 <label for="terminos"><b>Acepto términos y condiciones</b></label>
@@ -47,7 +49,7 @@
             <div> 
                 <a href="login.html">Ya tengo cuenta</a>
             </div>
-        <button type="submit"> <b>Enviar</b> </button>
+        <button type="submit" class="boton_enviar"> <a href="login.html">Enviar </a> </button>
             
         </form>
     </main>
