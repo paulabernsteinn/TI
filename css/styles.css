@@ -1,5 +1,11 @@
 /*INDEX*/
 
+body{
+    background-image: url(../img/pared\ cocina-2.png);
+    background-size: 500px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -102,6 +108,8 @@ body{
 .recetas article{
     width: 30%;
     border: 1px solid rgba(0, 0, 0, 0.41);
+    background-color:white;
+
 }
 
 .recetas article img{
@@ -246,20 +254,14 @@ h1{
     background-color: rgb(196, 4, 4) ;
     border-radius: 30px;
     color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
-
 .logi div{
     margin-bottom: 10px;
 }
-
 .logi div a{
     color:white;
     text-decoration: none;
 }
-
-
 /*REGISTER*/
 .regi {
     display: flex;
@@ -273,7 +275,6 @@ h1{
     background-color: rgb(200,0,0) ;
     border-radius: 30px;
     color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 }
 .regi div{
@@ -283,7 +284,4 @@ h1{
     color:white;
     text-decoration: none;
 }
-.boton_enviar a{
-text-decoration: none;
-color: rgb(51, 50, 50);
-}
+
