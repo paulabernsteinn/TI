@@ -238,6 +238,24 @@ h1{
 /*hacer listas y poner la foto al costado y el texto al lado*/
 
 /*CATEGORIES*/
+
+.categories_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.category_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 200px;
+    border: 1px solid #eee;
+    background-color: rgba(0, 0, 255, .4)
+}
+
 /*CATEGORY*/
 /*SEARCH_RESULTS*/
 
