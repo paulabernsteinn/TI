@@ -15,8 +15,8 @@ form.addEventListener ("submit",function(event){
     }else
     invalidEmail.style.display= "None";
     
-    if(password.value === ""){
-        invalidPassword.innerText = "no completaste el password o tiene menos de 3 numeros";
+    if(contraseña.value === ""){
+        invalidPassword.innerText = "Por favor complete el campo Password";
         invalidPassword.style.display= "Block"
         errors = true
 
