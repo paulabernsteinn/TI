@@ -1,7 +1,6 @@
 const lista_recetas = document.querySelector(".recetas")
 let recetas = ""
 
-const grilla = document.querySelector('.grilla')
 
 
 fetch('https://dummyjson.com/recipes')
