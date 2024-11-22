@@ -33,6 +33,14 @@ fetch(`https://dummyjson.com/recipes/${id}`)
     recetaIndividual.instructions = data.instructions
     instruccionesReceta.innerText = recetaIndividual.instructions
 
+    let instructions = "";
+    for (let i = 0; i < recetaIndividual.instructions.length; i++) {
+     let markUp = `<li>${recetaIndividual.instructions[i]}</li>`
+     instructions += markUp
+    }
+
+    instruccionesReceta.innerHTML = instructions
+
     recetaIndividual.cookTimeMinutes = data.cookTimeMinutes
     tiempo_coccionReceta.innerText = recetaIndividual.cookTimeMinutes
 
