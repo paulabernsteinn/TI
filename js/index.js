@@ -1,15 +1,17 @@
 const lista_recetas = document.querySelector(".recetas")
 let recetas = ""
 
+let skip = 0;
 
 
-fetch('https://dummyjson.com/recipes')
+
+fetch(`https://dummyjson.com/recipes?limit=10&skip=${skip}`)
     .then(function (response){
         return response.json();
     })
     
     .then(function (data){    
-        for (let i=0; i < 10; i++){
+        for (let i=0; i < data.recipes.length ; i++){
             let receta = data.recipes[i];
             
             let markUp = `
@@ -29,9 +31,9 @@ fetch('https://dummyjson.com/recipes')
         console.log("Mi error fue", error);
     })
 
-let skip = 0;
+
 cargarRecetas("https://dummyjson.com/recipes?limit=10%skip=0");
-document.querySelector(".cargar_mas").addEventListener('click', function(){
+document.querySelector("#cargar_mas").addEventListener('click', function(){
     skip += 10
     let url = 'https://dummyjson.com/recipes?limit=10%skip=' + skip;
     cargarRecetas(url)

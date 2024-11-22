@@ -1,7 +1,9 @@
-const lista_category = document.querySelector(".grilla_category")
-let grilla_category = ""
+let queryString = location.search
+let queryStringObj = new URLSearchParams(queryString);
+let cat= queryStringObj.get("cat")
 
-
+let lista_categorias = document.querySelector(".grilla_categoria")
+let grilla = ""
 
 
 fetch(`https://dummyjson.com/recipes/tag/${cat}`)
@@ -9,8 +11,8 @@ fetch(`https://dummyjson.com/recipes/tag/${cat}`)
     return response.json()
   })
   .then(function(data){
-    for (let i=0; i < data.length; i++){
-        let receta = data.recipes.cat[i];
+    for (let i=0; i < data.recipes.length ; i++){
+        let receta = data.recipes[i];
         
         let markUp = `
             <article class="receta">
@@ -20,9 +22,9 @@ fetch(`https://dummyjson.com/recipes/tag/${cat}`)
                 <p class = "ver_mas"> <a href=receta.html?id=${receta.id}>Ver más </a></p>
             </article>
             `;
-        grilla_category += markUp;
+        grilla += markUp;
     }
-    lista_category.innerHTML = grilla_category;
+    lista_categorias.innerHTML = grilla;
     
    
   })

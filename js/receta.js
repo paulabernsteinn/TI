@@ -15,7 +15,7 @@ let recetaIndividual={
     ingredients: "",
     instructions: "",
     cookTimeMinutes: "",
-    mealType: "",
+    tags: "",
 }
 fetch(`https://dummyjson.com/recipes/${id}`)
 .then(function(response) {
@@ -36,8 +36,8 @@ fetch(`https://dummyjson.com/recipes/${id}`)
     recetaIndividual.cookTimeMinutes = data.cookTimeMinutes
     tiempo_coccionReceta.innerText = recetaIndividual.cookTimeMinutes
 
-    recetaIndividual.mealType = data.mealType
-    categoriasReceta.innerText = recetaIndividual.mealType
+    recetaIndividual.tags = data.tags
+    categoriasReceta.innerText = recetaIndividual.tags
 
   })
 .catch(function(e){
