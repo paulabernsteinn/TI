@@ -1,4 +1,4 @@
-let form = document.querySelector("form")
+let form = document.querySelector(".form_register")
 let email = document.getElementById("email")
 let contraseña = document.getElementById("contraseña")
 
