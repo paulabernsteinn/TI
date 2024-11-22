@@ -3,9 +3,8 @@ let recetas = ""
 
 let skip = 0;
 
-
-
-fetch(`https://dummyjson.com/recipes?limit=10&skip=${skip}`)
+function getData(){
+    fetch(`https://dummyjson.com/recipes?limit=10&skip=${skip}`)
     .then(function (response){
         return response.json();
     })
@@ -30,11 +29,12 @@ fetch(`https://dummyjson.com/recipes?limit=10&skip=${skip}`)
     .catch(function (error){
         console.log("Mi error fue", error);
     })
+}
 
+getData() //invocamos a la funcion por primera vez
 
-cargarRecetas("https://dummyjson.com/recipes?limit=10%skip=0");
-document.querySelector("#cargar_mas").addEventListener('click', function(){
+document.querySelector(".cargar_mas").addEventListener('click', function(e){
+    e.preventDefault()
     skip += 10
-    let url = 'https://dummyjson.com/recipes?limit=10%skip=' + skip;
-    cargarRecetas(url)
+    getData()
 });
