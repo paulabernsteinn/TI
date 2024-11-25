@@ -1,23 +1,15 @@
-let queryString = location.search
-let queryStringObj = new URLSearchParams(queryString);
-let mealType = queryStringObj.get("mealType")
-
-let nombreCategorias= document.querySelector(".categorias")
-
-let CategoriasIndividual={
-    mealType: "",
-}
-fetch(`https://dummyjson.com/recipes/meal-type/${mealType}`)
-.then(function(response) {
-    return response.json()
-  })
-  .then(function(data){
-    
-    CategoriasIndividual.mealType = data.mealType
-    nombreCategorias.innerText = CategoriasIndividual.mealType
-
-  })
-.catch(function(e){
-    console.log(e)
+let grillaCategorias = document.querySelector(".categories_container")
+let categories = ""
+fetch('https://dummyjson.com/recipes/tags')
+.then(function(response){
+  return response.json()
 })
-
+.then(function(data){
+for (let i=0; i<data.length; i++){
+  let markUp= `
+  <a class="category_button" href="category.html?cat=${data[i]}"> ${data[i]} </a>
+  `
+  categories += markUp
+}
+grillaCategorias.innerHTML = categories
+})

@@ -20,7 +20,7 @@
         <ul class="carpetas">
             <li><a href="index.html">HOME</a></li>
             <li><a href="categories.html">CATEGORIAS</a></li>
-            <li class="buscate"><form action="index.html" method="get" class="buscador">
+            <li class="buscate"><form action="search-results.html" method="get" class="buscador">
                 <div class="buscatexto">
                     <label for="buscador">BUSCADOR</label>
                     <input type="Buscador" name="buscador" id="buscador" placeholder="Buscador">
@@ -31,15 +31,17 @@
     </header>
     <h1 class="titulo">REGISTRO</h1>
     <main class="regi">
-        <form action="index.html" method="get">
+        <form class="form_register" action="index.html" method="get">
             <div>
             <label for="email"><b>Email</b></label>
-                <input type="email" name="email" id="email" placeholder="Escribe tu email" required>
+                <input type="email" name="email" id="email" placeholder="Escribe tu email" >
             </div>
+            <div class="email"></div>
             <div>
-            <label for="contrasennia"><b>Password</b></label>
-            <input type="password" name="contrasennia" id="contrasennia" placeholder="Contraseña">
+            <label for="contraseña"><b>Password</b></label>
+            <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
             </div>
+            <div class="contraseña"></div>
             <div>
                 <label for="terminos"><b>Acepto términos y condiciones</b></label>
                 <input type="checkbox" name="terminos" id="terminos">
