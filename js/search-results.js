@@ -30,26 +30,21 @@ fetch(`https://dummyjson.com/recipes/search?q=${q}`)
 .catch(function (error){
     console.log("Mi error fue", error);
 })
-
+let form = document.querySelector(".form_search")
 let buscador = document.getElementById("buscador")
-const invalidBuscador = document.querySelector(".buscador")
+let invalidBuscador = document.querySelector(".buscador")
 
 form.addEventListener("submit", function(event){
     event.preventDefault();
     let errors= false
     if (buscador.value === ""){
-        invalidBucador.innerText = "el campo esta vacio";
-        invalidBucador.style.display = 'block';
+        alert("No completaste el campo busacdor")
         errors = true
-    } else{
-        invalidBucador.style.display = 'none';
-    }
-
+    } 
     if (buscador.value.length <4){
-        invalidBucador.innerText = "no completaste el password o tiene menos de 3 numeros";
-        invalidBucador.style.display = 'block';
+        alert("el campo del buscador tiene que tener mas de 3 letras")
         errors = true
-    } else{
-        invalidBucador.style.display = 'none';
     }
+    if (!errors)
+    this.submit
 })

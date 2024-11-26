@@ -46,6 +46,7 @@ fetch(`https://dummyjson.com/recipes/${id}`)
 
     recetaIndividual.tags = data.tags
     categoriasReceta.innerText = recetaIndividual.tags
+    
 
   })
 .catch(function(e){
