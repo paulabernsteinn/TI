@@ -38,13 +38,21 @@ form.addEventListener("submit", function(event){
     event.preventDefault();
     let errors= false
     if (buscador.value === ""){
-        alert("No completaste el campo busacdor")
+        invalidBuscador.innerText= "El campo no puede esatr vacio ni tener menos de tres letras"
+        invalidBuscador.style.display = "block"
         errors = true
-    } 
+    }else  
+    invalidBuscador.style.display = "none"
+ 
+    
     if (buscador.value.length <4){
-        alert("el campo del buscador tiene que tener mas de 3 letras")
+        invalidBuscador.innerText= "El campo no puede esatr vacio ni tener menos de tres letras"
+        invalidBuscador.style.display = "block"
         errors = true
+    }else  
+    invalidBuscador.style.display = "none"
+ 
+    if (!errors){
+    this.submit()
     }
-    if (!errors)
-    this.submit
 })

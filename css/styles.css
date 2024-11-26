@@ -71,7 +71,7 @@ body{
     background-color:rgb(196, 4, 4);
     text-decoration: none;
     width: 180px;
-    height: 50px;
+    height: 70px;
     border-radius: 7px;
 }
 
@@ -83,7 +83,7 @@ body{
     background-color:rgb(196, 4, 4);
     text-decoration: none;
     width: 400px;
-    height: 50px;
+    height: 70px;
     border-radius: 7px;
 }
 
@@ -231,7 +231,10 @@ h1{
     background-color: rgb(196, 4, 4);
     margin-top: 10px;
   }
-  
+  .tags {
+    text-decoration: none;
+    color: black;
+  }
 /*CATEGORIES*/
 
 .categories_container{
@@ -304,6 +307,7 @@ h1{
     color:white;
     text-decoration: none;
 }
+
 
 /*Responsive Mobile*/
 @media (max-width: 420px) {

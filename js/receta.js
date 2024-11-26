@@ -44,9 +44,18 @@ fetch(`https://dummyjson.com/recipes/${id}`)
     recetaIndividual.cookTimeMinutes = data.cookTimeMinutes
     tiempo_coccionReceta.innerText = recetaIndividual.cookTimeMinutes
 
-    recetaIndividual.tags = data.tags
-    categoriasReceta.innerText = recetaIndividual.tags
+    let tags = "";
     
+    for (let j = 0; j < data.tags.length; j++) {
+      let tag = data.tags[j];
+      tags += `
+     
+        <a href="./category.html?idCategorias=${tag}" class="tags" ><p>${tag}</p></a>
+        `;
+  
+    };
+    categoriasReceta.innerHTML = tags
+
 
   })
 .catch(function(e){
