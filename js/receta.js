@@ -50,7 +50,7 @@ fetch(`https://dummyjson.com/recipes/${id}`)
       let tag = data.tags[j];
       tags += `
      
-        <a href="./category.html?idCategorias=${tag}" class="tags" ><p>${tag}</p></a>
+        <a href="./category.html?cat=${tag}" class="tags" ><p>${tag}</p></a>
         `;
   
     };
