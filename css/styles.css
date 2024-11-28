@@ -201,10 +201,10 @@ h1{
     max-width: 700px;
 }
 
-.receta p {
+.receta{
     text-align: center;
 }
-    
+
 .nombre_receta{
     font-weight: bold;
 }
@@ -255,12 +255,18 @@ h1{
 .categories_container a{
     color:black;
     text-decoration: none;
-    border: 1px solid rgba(0, 0, 0, 0.41);
+    border: 2px solid rgba(0, 0, 0, 0.41);
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin: 15px;
+    margin-bottom: 30px;
 }
 
 /*CATEGORY*/
+
+.grilla_categoria img{
+    width: 300px;
+}
+
 /*SEARCH_RESULTS*/
 
 /*LOGIN*/
