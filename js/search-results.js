@@ -2,6 +2,7 @@ let queryString = location.search
 let queryStringObj = new URLSearchParams(queryString);
 let q= queryStringObj.get("buscador")
 let lista_search = document.querySelector(".recetas")
+let title = document.querySelector(".lo_buscado")
 let recetas_search = ""
 
 console.log(q)
@@ -10,10 +11,18 @@ fetch(`https://dummyjson.com/recipes/search?q=${q}`)
     return response.json();
 })
 
-.then(function (data){    
+.then(function (data){   
+    console.log(data.recipes)
+
+    title.innerHTML = `Resultados de búsqueda para: ${q}`
+    
+    if (buscador.value != `{q}`){
+        title.innerHTML = `No hay coincidencias.`;
+    }
+    
     for (let i=0; i < data.recipes.length ; i++){
         let receta = data.recipes[i];
-        
+
         let markUp = `
             <article class="receta">
                 <img src= ${receta.image} >
@@ -51,12 +60,6 @@ form.addEventListener("submit", function(event){
         errors = true
     }else  
     invalidBuscador.style.display = "none"
-
-    if (buscador) {
-        buscador.innerHTML = buscador.value;
-    } else {
-        document.getElementById('resultado-buscador').innerHTML = 'No se ingresó ninguna búsqueda.';
-    }
  
     if (!errors){
     this.submit()
