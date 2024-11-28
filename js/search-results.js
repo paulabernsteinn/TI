@@ -51,6 +51,12 @@ form.addEventListener("submit", function(event){
         errors = true
     }else  
     invalidBuscador.style.display = "none"
+
+    if (buscador) {
+        buscador.innerHTML = buscador.value;
+    } else {
+        document.getElementById('resultado-buscador').innerHTML = 'No se ingresó ninguna búsqueda.';
+    }
  
     if (!errors){
     this.submit()
