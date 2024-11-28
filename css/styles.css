@@ -340,11 +340,15 @@ h1{
 @media (max-width: 420px){
     .carpetas{
         display:flex;
+        flex-wrap: wrap;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100px;
     }
     .recetas{
-        width: 40%;
-        margin:34px;
+        width: 60%;
+        margin:4px;
     }
     body{
         display: flex;
