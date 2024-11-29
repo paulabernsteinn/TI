@@ -5,14 +5,14 @@ let lista_search = document.querySelector(".recetas")
 let title = document.querySelector(".lo_buscado")
 let recetas_search = ""
 
-console.log(q)
+
 fetch(`https://dummyjson.com/recipes/search?q=${q}`)
 .then(function (response){
     return response.json();
 })
 
 .then(function (data){   
-    console.log(data.recipes)
+    
 
     title.innerHTML = `Resultados de búsqueda para: ${q}`
     

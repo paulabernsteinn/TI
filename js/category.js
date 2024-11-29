@@ -22,7 +22,7 @@ fetch(`https://dummyjson.com/recipes/tag/${cat}`)
                 <p class = "ver_mas"> <a href=receta.html?id=${receta.id}>Ver más </a></p>
             </article>
             `;
-        grilla += markUp;
+        grilla += markUp;   
     }
     lista_categorias.innerHTML = grilla;
     
