@@ -5,7 +5,6 @@ let lista_search = document.querySelector(".recetas")
 let title = document.querySelector(".lo_buscado")
 let recetas_search = ""
 
-
 fetch(`https://dummyjson.com/recipes/search?q=${q}`)
 .then(function (response){
     return response.json();
@@ -13,13 +12,8 @@ fetch(`https://dummyjson.com/recipes/search?q=${q}`)
 
 .then(function (data){   
     
-
     title.innerHTML = `Resultados de búsqueda para: ${q}`
-    
-    if (buscador.value != `{q}`){
-        title.innerHTML = `No hay coincidencias.`;
-    }
-    
+
     for (let i=0; i < data.recipes.length ; i++){
         let receta = data.recipes[i];
 
@@ -33,6 +27,10 @@ fetch(`https://dummyjson.com/recipes/search?q=${q}`)
             `;
         recetas_search += markUp;
     }
+    if (recetas_search === ""){
+        title.innerHTML = `No hay coincidencias para: ${q}`
+    }
+
     lista_search.innerHTML = recetas_search;
 
 })
